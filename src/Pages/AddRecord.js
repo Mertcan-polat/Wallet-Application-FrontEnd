@@ -16,7 +16,7 @@ function AddRecord() {
   const [amount, setAmount] = useState("");
   const [description, setDescription] = useState("");
   const { state } = useLocation();
-  let type = state.type === "income" ? "entrada" : "saída";
+  let type = state.type === "income" ? "enter" : "singout";
   const { auth } = useContext(AuthContext);
   let navigate = useNavigate();
 
